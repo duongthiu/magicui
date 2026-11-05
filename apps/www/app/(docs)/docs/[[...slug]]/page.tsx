@@ -53,7 +53,7 @@ export async function generateMetadata({
     return {}
   }
 
-  const url = process.env.NEXT_PUBLIC_APP_URL
+  const url = process.env.NEXT_PUBLIC_APP_URL || "https://magicui.design"
 
   const ogUrl = new URL(`${url}/og`)
   ogUrl.searchParams.set("title", doc.title ?? "")

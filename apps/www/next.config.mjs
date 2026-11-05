@@ -2,6 +2,7 @@ import { createMDX } from "fumadocs-mdx/next"
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  outputFileTracingRoot: "/Users/tranduongthieu/Documents/Code/Private/magicui",
   outputFileTracingIncludes: {
     "/*": ["./registry/**/*", "./content/**/*"],
   },

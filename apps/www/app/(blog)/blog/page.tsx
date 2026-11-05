@@ -44,7 +44,7 @@ export default async function Page({
   })
 
   const allTags = posts.flatMap((p) => normalizeTag(p.data?.tags))
-  const tags = [...new Set(allTags)].filter(Boolean).sort()
+  // const tags = [...new Set(allTags)].filter(Boolean).sort()
   const filteredPosts = selectedTag
     ? posts.filter((p) => normalizeTag(p.data?.tags).includes(selectedTag))
     : posts
